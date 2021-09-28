@@ -118,7 +118,7 @@ function buildAndShowHomeHTML (categories) {
       // it into the home html snippet.
       //
       // var homeHtmlToInsertIntoMainPage = ....
-         var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", "'"+chosenCategoryShortName+"'")
+         var homeHtmlToInsertIntoMainPage = insertProperty(homeHtml, "randomCategoryShortName", "'"+chosenCategoryShortName+"'");
 
 
       // TODO: STEP 4: Insert the the produced HTML in STEP 3 into the main page
@@ -318,7 +318,7 @@ function insertItemPrice(html,
                          priceValue) {
   // If not specified, replace with empty string
   if (!priceValue) {
-    return insertProperty(html, pricePropName, "");;
+    return insertProperty(html, pricePropName, "");
   }
 
   priceValue = "$" + priceValue.toFixed(2);
